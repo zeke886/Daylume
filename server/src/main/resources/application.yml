@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: lifeos-server
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/lifeos}
+    username: ${DATABASE_USERNAME:lifeos}
+    password: ${DATABASE_PASSWORD:lifeos}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: /api/v1
+
+lifeos:
+  demo-user-id: ${DEMO_USER_ID:00000000-0000-0000-0000-000000000001}
+

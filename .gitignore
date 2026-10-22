@@ -1,0 +1,26 @@
+# Dependencies and generated output
+node_modules/
+dist/
+target/
+coverage/
+*.tsbuildinfo
+
+# Local settings, credentials and logs
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# Original Word exports; maintained requirements live in Markdown
+/*.docx
+
+# Python runtime (for the planned AI service)
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
